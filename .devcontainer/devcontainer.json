@@ -1,0 +1,19 @@
+{
+  "name": "React Reservation System",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": [
+    "-u", "node"
+  ],
+  "forwardPorts": [3000, 5000],
+  "postCreateCommand": "create-react-app my-reservation-app",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
